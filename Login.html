@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Login Page</title>
+	
+		
+<!-- Linking style sheet for SIGNIN & SIGNUP-->
+<link rel="stylesheet" href="CSS STYLES/Signin&SignupStyle.css" type="text/css">
+
+	
+<!------------------------------------------------------------------------ Font Linking ---------------------------------------------------------------------------------->
+		
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700;800&display=swap" rel="stylesheet">
+	
+<!-- **************************************************** icon linking *********************************************** -->
+    
+    <link rel="shortcut icon" href="Logos/icon.png" type="image/x-icon">
+    
+</head>
+
+<body>
+	
+		
+<!-- **************************************************************************** NAV BAR ******************************************************************************* -->
+	
+<div class="WebHeader" id="Home">
+	<nav>
+		<div class="nav-main">
+		<div class="brand"> <a href="Main.html" class="brand"><h1>CEYLON TASTE </h1></a></div>
+		<ul>
+		<li> <a href="Main.html" class="link"> HOME </a></li>
+			 <li class="dropdown">
+                <a href="#Frame" class="link">PRODUCTS</a>
+                <div class="drop-menu">
+				<ul>
+                <li><a href="Images and Product/Ceylon Cinnamon/CeylonCinnamon.html">Ceylon Cinnamon</a></li>
+				<li><a href="Images and Product/Cinnamon With Bee Honey/CinnamonWithBeeHoney.html">Cinnamon With Bee Honey</a></li>
+                <li><a href="Images and Product/Black Pepper/BlackPepper.html">Black Pepper</a></li>
+                <li><a href="Images and Product/Turmeric Powder/Turmeric.html">Turmeric Powder</a></li>
+				<li><a href="Images and Product/Cloves/Cloves.html">Cloves</a></li>	
+				</ul>
+				</div>
+			</li>	
+		        <li class="dropdown">
+                <a href="#Frame" class="link">NUTRITION JUICE</a>
+                <div class="drop-menu">
+				<ul>
+				<li><a href="Images and Product/King Coconut Water/KingCoconutJuice.html">King Coconut Water</a></li>
+                <li><a href="Images and Product/Soursop Juice/SoursapJuice.html">Soursop Juice</a></li>
+				<li><a href="Images and Product/Passion Fruit Juice/PassionFruitJuice.html">Passion Fruit Juice</a></li>
+                <li><a href="Images and Product/AloeveraJuice/AloeveraJuice.html">Aloe Vera Juice</a></li>
+                <li><a href="Images and Product/JackFruitJuice/JackFruitJuice.html">Jack Fruit Juice</a></li>
+                </ul>
+				</div>
+			</li>	
+			<li><a href="#About" class="link"> ABOUT </a></li>
+			<li><a href="#" class="link"> SHOP </a></li>
+			
+			</ul>
+				
+			<div class="nav-button">
+			<button class="button" id="loginbtn" onClick=" login() " >Log in</button>
+			<button class="button" id="Signupbtn" onClick=" Signup() " >Sign up</button>
+		
+		 </div>
+		</div>
+   </nav>
+
+	
+<!-------------------------------------------------------------------------- Login Section --------------------------------------------------------------------------------------------------------->
+	
+	
+			<form class="LoginForm">
+		
+				<div class="Container" id="login">
+					<div class="topSection">
+					<label>Don't have an account? <a href="#" onClick="Signup()">Sign Up</a></label>
+					<label class="header">Login</label>
+					</div>
+					
+					<div class="input-box">
+					<input type="text" class="input-field" placeholder="Username or Email">
+					</div>
+					
+					<div class="input-box">
+					<input type="password" class="input-field" placeholder="Password">
+					</div>
+					
+					<div class="input-box">
+					<input type="submit" class="submit" value="Log in">
+					</div>
+					
+					<div class="bottom">
+					<label><a href="#">Forgot Password?</a></label>
+											
+				</div>
+			</div>
+	
+	
+		</form>
+	
+</div>
+	
+<!------------------------------------------------------------------------------- Link the JS file for forms scripts ---------------------------------------------------------------------------->
+	
+	<script src="Javascript SCRIPTINGS/Mainscript.js"> </script>
+
+	
+<!-- ---------------------------------------------------------------- About Section ---------------------------------------------------------------------------------- -->
+	
+		
+	<div class="About" id="About"> <p class="BoxTitle"> ABOUT US </p>
+		<div class="AboutContainer">
+			<div class="AboutBox">
+				<h2 class="AboutTitle"><a href="Main.html">CEYLON TASTE </a></h2><br>
+				<p class="AboutDesc"> Ceylon Taste has been in operation since 2022. Our mission is to provide carefully manufactured organic products to the global market while elevating them to a higher standard. </p>
+				<div class="SocialLinks"><br>
+				<a href="#fb" class="Social"><img src="Logos/fb1.png" alt="Facebook logo" width="70px" height="75px"></a>
+				<a href="#insta" class="Social"><img src="Logos/insta2.png" alt="Instagram logo" width="70px" height="75px"></a>
+				<a href="#linkedin" class="Social"><img src="Logos/linkedin1.png" alt="linkedin logo" width="70px" height="75px"></a>
+				</div>
+			</div>
+	
+			<div class="AboutBox">
+				<h2 class="AboutHeading"> Spice Ranges </h2><br>
+				<div class="AboutLinks">
+					<a href="Images and Product/Ceylon Cinnamon/CeylonCinnamon.html" class="link"><p class="SpicesLinks">Ceylon Cinnamon</p></a>
+					<a href="Images and Product/Black Pepper/BlackPepper.html" class="link"><p class="SpicesLinks">Black Pepper</p></a>
+					<a href="Images and Product/Turmeric Powder/Turmeric.html" class="link"><p class="SpicesLinks">Termeric</p></a>
+					<a href="Images and Product/Cloves/Cloves.html" class="link"><p class="SpicesLinks">Cloves</p></a>
+				</div>	
+			</div>
+			
+			<div class="AboutBox">
+				<h2 class="AboutHeading"> Beverages </h2><br>
+				<div class="AboutLinks">
+					<a href="Images and Product/King Coconut Water/KingCoconutJuice.html" class="link"><p class="SpicesLinks">King Coconut Drink</p></a>
+					<a href="Images and Product/Soursop Juice/SoursapJuice.html" class="link"><p class="SpicesLinks">Soursap Juice</p></a>
+					<a href="Images and Product/AloeveraJuice/AloeveraJuice.html" class="link"><p class="SpicesLinks">Aloevera Juice</p></a>
+					<a href="Images and Product/JackFruitJuice/JackFruitJuice.html" class="link"><p class="SpicesLinks">Jack Fruit juice</p></a>
+				</div>	
+			</div>
+			
+		</div>
+	</div>
+
+	
+<!-- ---------------------------------------------------------------------- Null Section ------------------------------------------------------------------------------- -->
+	
+	
+	<div class="null"> <p class="null-text">© 2023 CEYLON TASTE (PVT) LTD </p> </div>
+	
+	
+	<script src="Javascript SCRIPTINGS/Mainscript.js"> </script>
+	
+</body>
+</html>

@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+
+*{
+	margin:0;
+	padding:0;
+	font-family: 'M PLUS Rounded 1c', sans-serif ;
+	box-sizing:border-box;
+}
+/* ************************************************************************* Body Styling ******************************************************************************* */
+body{
+	background-color:#FFF;
+	color:#000;
+	width:100%;
+}
+
+/* ************************************************************************* Navbar Styling ******************************************************************************* */
+
+.WebHeader {
+	display: flex;
+	width: 100%;
+    height: 20vh;
+	background: rgba(0, 0, 0, 0.5);
+	background-size: cover;
+	background-position: center;
+	padding: 10px 8% ;
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+	}
+
+.brand{
+	margin-top: -100px;
+	margin-left: +10px;
+	font-size: 28px;
+	text-decoration: none;
+	color:#E5BA22;
+}
+
+.nav-main{
+	min-width: 94%;
+	position:absolute;
+	display:flex; 
+	top: 30px;	
+	margin-left:-100px;
+	justify-content: space-around;
+	height: 20vh;
+	line-height: 100px;
+	font-size: 20px;
+}
+
+.nav-main ul{
+	display: flex;
+}
+
+.nav-main ul li{
+	list-style-type: none;
+}
+
+.nav-main ul li .link{
+	text-decoration: none;
+	font-weight: 500;
+	color: #fff;
+	padding-bottom: 15px;
+	margin: 0 25px;
+}
+
+.link:hover{
+	border-bottom: 0 solid #fff;
+}
+.nav-main ul li a:hover{
+	color: #E5BA22;
+	transition: 0.3s;
+}
+
+.drop-menu{
+	display:none;
+}
+
+.dropdown{
+	height:100px;;
+}
+
+.nav-main ul li:hover .drop-menu{
+	display: block;
+	font-size: 18px;
+	font-weight: 200;
+	position: absolute;
+	background: rgba(255,255,255,0.85);
+	margin-top: -25px;
+	margin-left: -15px;
+	border-radius: 10px;
+}
+
+.nav-main ul li .drop-menu ul a:hover{
+	color: #E5BA22;
+	transition: 0.2s;
+	font-size: 20px; 
+}
+
+.nav-main ul li:hover .drop-menu ul{
+	display: block;
+	margin-top: -20px;
+	padding: 10px;
+	line-height: 4;
+}
+.nav-main ul li .drop-menu ul a{
+	text-decoration: none;
+	color: black;
+	font-weight: 500;
+	padding: 10px;
+}
+
+.button {
+  border: 1px solid #fff;
+  outline: 10px;
+  color: #fff;
+  padding: 13px 15px;
+  font-size: 18px;
+  border-radius: 100px;
+  margin-left: 45px;
+  align-items: center;
+  cursor:pointer;
+  background: transparent; 
+}
+
+.button:hover {
+  background: #E5BA22;
+  transition: 0.3s;
+}
+
+/* ********************************************************************* Product Feature Styling *************************************************************************** */
+
+
+.ProductContainer{
+    display: flex;
+    max-width:100%;
+    margin-top: 70px;
+    justify-content: space-between;
+}
+
+.ProductImage , .Desc{
+    flex: 1;
+    position: relative;
+}
+
+.Cartbutton {
+    background-color: #f2f2f2;
+    outline: 10px;
+	padding: -5px 18px;
+	background: transparent;
+	font-size: 15px;
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+    margin-top: 30px;
+	cursor: pointer;
+}
+
+.Cartbutton .CartButton , .BuyButton , .CartBox{
+    padding:10px;
+    background-color: transparent;
+    border-radius: 80px;
+    margin-right: 10px; 
+    
+    font-family: "Ubuntu","Sans seriff";
+    font-size: 15px;
+    font-weight: 500;
+}
+.CartBox{
+    width:60px;
+}
+
+.Cartbutton .CartButton:hover{
+    background-color:#E5BA22;
+    color: #000;
+}
+
+.Cartbutton .BuyButton:hover {    
+    background-color:#E5BA22;
+    color: #000;
+}
+
+
+.Picture{    
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url("tuemr-curry.jpg"); 
+    background-position: center;
+    height:40vh;
+}
+
+
+.sub-Desc{
+    font-family: 'Ubuntu',sans-serif;
+    font-weight:700;
+    font-size:50px;
+}
+
+.price {
+    margin-top: 10px;
+}
+
+.price:hover{
+    color:red;
+}
+
+.sub-Desc-p{
+    color: #2F4F4F;
+    padding-right: 80px;
+    margin: 20px 50px 0 0;
+    line-height: 35px;
+    font-family: 'Ubuntu',sans-serif;;
+    font-weight: 500;
+    font-size:20px;
+}
+
+.ProductContainer .ProductImage{
+    border-radius: 100px;
+    margin: 10px 80px 0px 50px;
+}
+
+.ProductContainer .ProductImage img{
+    border-top-right-radius: 100px;
+}
+
+.ProductContainer .ProductImage:hover{
+    transform: scale(0.8);
+    transition: transform 0.4s ease; 
+}
+
+
+/* **************************************************************** Product Table Styling ********************************************************************************** */
+
+.caption{
+    font-size: 40px;
+}
+
+.DescTable{
+    margin: 10px 400px 50px 400px;
+}
+
+.DescTable-style{
+    background-color:rgba(230,146,56,0.2);
+    padding: 10px;
+    margin-top:40px; 
+    border-top-right-radius: 60%;
+    border-top-left-radius: 0.5%;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.sub-caption {
+    color:#067C31;
+}
+
+.table th ,  td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.table th {
+    background-color: #f2f2f2;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+
+
+/* **************************************************************** About us Styling ********************************************************************************** */
+
+
+.About{
+	margin-top: 50px;
+	background-color: rgba(145,145,145,0.2);
+	width: 100%;
+	border-top-left-radius: 100px;
+	border-top-right-radius: 100px;
+	padding-top:50px;
+}
+
+.BoxTitle{
+	font-family:'M PLUS Rounded 1c', sans-serif;
+	font-weight: 800;
+	font-size: 55px;
+	text-align: center;
+}
+
+.About .AboutContainer{
+	max-width: 100%;
+	margin-top: 60px;
+	color: black;
+	display:flex;
+	justify-content: center;
+	padding: 0px;
+}
+
+.About .AboutContainer .AboutBox{
+	max-width: 30%;
+	line-height: 38px;
+	font-size: 20px;
+	padding: 0 100px;
+}
+
+.About .AboutContainer .AboutTitle a{
+	color: #000;
+	font-weight: 800;
+	text-decoration: none;
+}
+
+.About .AboutContainer .AboutTitle a:hover{
+	color: #E5BA22;
+}
+
+.About .AboutContainer .AboutDesc {
+	color:#686262;
+	font-size: 19px;
+}
+
+.About .AboutContainer .AboutLinks a {
+	text-decoration:none;
+	color: #000;
+	font-size: 20px;
+	line-height: 50px;
+}
+
+.About .AboutContainer .AboutLinks a :hover{
+	color:#E5BA22;
+	transition: 0.5s;
+}
+
+.About .AboutContainer .AboutHeading {
+	color:darkslategrey;
+	font-size: 28px;
+	margin-left: -5px;
+}
+
+.About .AboutContainer .SocialLinks{
+	margin: -20px -10px 10px 10px;
+}
+
+/*-- ---------------------------------------------------------------- Null Styling ---------------------------------------------------------------------------------- */
+
+.null{
+	height:60px;
+	background-color:#1F1F1F; 
+	border-top-left-radius: 30px;
+	border-top-right-radius:30px;
+}
+
+.null .null-text{
+	display: flex;
+	justify-content: flex-start;
+	color: #928C8D;
+	padding: 25px 0 0 120px;
+}
+
+
+

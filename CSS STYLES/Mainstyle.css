@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@900&display=swap');
+
+
+
+*{
+	margin:0;
+	padding:0;
+	font-family: 'M PLUS Rounded 1c', sans-serif ;
+	box-sizing:border-box;
+}
+/* ************************************************************************* Body Styling ******************************************************************************* */
+body{
+	background-color:#FFF;
+	color:#000;
+	width:100%;
+}
+
+/* ************************************************************************* Navbar Styling ******************************************************************************* */
+
+.WebHeader {
+	display: flex;
+	width: 100%;
+    height: 95vh;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../HOME_Images/wall.jpg");
+	background-size: cover;
+	background-position: center;
+	padding: 10px 8% ;
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+	}
+
+.brand{
+	margin-top: -100px;
+	margin-left: +10px;
+	font-size: 28px;
+	text-decoration: none;
+	color:#E5BA22;
+}
+
+.nav-main{
+	min-width: 94%;
+	position:absolute;
+	display:flex; 
+	top: 30px;	
+	margin-left:-100px;
+	justify-content: space-around;
+	height: 100%;
+	line-height: 100px;
+	font-size: 20px;
+}
+
+.nav-main ul{
+	display: flex;
+}
+
+.nav-main ul li{
+	list-style-type: none;
+}
+
+.nav-main ul li .link{
+	text-decoration: none;
+	font-weight: 500;
+	color: #fff;
+	padding-bottom: 15px;
+	margin: 0 25px;
+}
+
+.link:hover{
+	border-bottom: 0 solid #fff;
+}
+.nav-main ul li a:hover{
+	color: #E5BA22;
+	transition: 0.3s;
+}
+
+.drop-menu{
+	display:none;
+}
+
+.dropdown{
+	height:100px;;
+}
+
+.nav-main ul li:hover .drop-menu{
+	display: block;
+	font-size: 18px;
+	font-weight: 200;
+	position: absolute;
+	background: rgba(255,255,255,0.85);
+	margin-top: -25px;
+	margin-left: -15px;
+	border-radius: 10px;
+}
+
+.nav-main ul li .drop-menu ul a:hover{
+	color: #E5BA22;
+	transition: 0.2s;
+	font-size: 20px; 
+}
+
+.nav-main ul li:hover .drop-menu ul{
+	display: block;
+	margin-top: -20px;
+	padding: 10px;
+	line-height: 4;
+}
+.nav-main ul li .drop-menu ul a{
+	text-decoration: none;
+	color: black;
+	font-weight: 500;
+	padding: 10px;
+}
+
+.button {
+  border: 1px solid #fff;
+  outline: 10px;
+  color: #fff;
+  padding: 13px 15px;
+  font-size: 18px;
+  border-radius: 100px;
+  margin-left: 45px;
+  align-items: center;
+  cursor:pointer;
+  background: transparent; 
+}
+
+.button:hover {
+  background: #E5BA22;
+  transition: 0.3s;
+}
+
+/* ********************************************************************* Body Feature Styling *************************************************************************** */
+
+
+.Desc{
+	background-color:#F4F4F4;
+	margin-top:2.5px;
+	padding: 50px 12%;
+	font-size: 20px;
+	color: black;
+	display:flex;
+	max-width:100%;
+	border-bottom-left-radius: 30%;
+}
+
+.Description_Title{
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+	font-size: 40px;
+	font-weight:800;
+	max-width:80%;
+}
+
+.Description_data{
+	line-height: 45px;
+	color: grey;
+}
+.text-col{
+	max-width:60%;
+	flex-basis: 50%;
+	margin-bottom:20px;
+	align:center;
+	margin-top: 70px;
+	margin-left: 50px;
+}
+
+.img-col{
+	flex-basis: 50%;
+	margin-bottom:20px;
+	max-width:50%;
+}
+
+.img-col img{
+	display: block;
+	width:90%;
+	margin-top: 90px;
+	border-radius: 25%; 
+}
+
+.img-col img:hover{
+	width:90%;
+	border-radius: 50%;
+	transition: 0.7s;
+}
+
+/* ************************************************************* Container Styling ************************************************************** */
+
+.AllContainer{
+	margin: 50px auto ;
+	flex-basis: auto;
+	max-width: 1200px;
+	padding: 30px 20px;
+}
+
+.AllContainer .Frame {
+	margin-top:30px; 
+	display:grid;
+    grid-template-columns: repeat(4, 1fr);
+	justify-content: center;
+}
+
+.AllContainer .Frame .Box{
+	text-align: center;
+	width:300px;
+	height: 400px;
+	margin: 35px 0 0 30px;
+	box-shadow: 1px 1px 50px 5px grey;
+	position: relative;
+}
+
+.AllContainer .Frame .Box .text {
+	color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.AllContainer .Frame .Box:hover {
+    background-color: #F4F4F4; 
+}
+
+.AllContainer .Frame .Box:hover .text {
+    opacity: 0.9;
+}
+
+/* **************************************************************** About us Styling ********************************************************************************** */
+
+
+.About{
+	margin-top: 50px;
+	background-color: rgba(145,145,145,0.2);
+	width: 100%;
+	border-top-left-radius: 100px;
+	border-top-right-radius: 100px;
+	padding-top:50px; 
+}
+
+.BoxTitle{
+	font-family:'M PLUS Rounded 1c', sans-serif;
+	font-weight: 800;
+	font-size: 55px;
+	text-align: center;
+}
+
+.About .AboutContainer{
+	max-width: 100%;
+	margin-top: 60px;
+	color: black;
+	display:flex;
+	justify-content: center;
+	padding: 0px;
+}
+
+.About .AboutContainer .AboutBox{
+	max-width: 30%;
+	line-height: 38px;
+	font-size: 20px;
+	padding: 0 100px;
+}
+
+.About .AboutContainer .AboutTitle a{
+	color: #000;
+	font-weight: 800;
+	text-decoration: none;
+}
+
+.About .AboutContainer .AboutTitle a:hover{
+	color: #E5BA22;
+}
+
+.About .AboutContainer .AboutDesc {
+	color:#686262;
+	font-size: 19px;
+}
+
+.About .AboutContainer .AboutLinks a {
+	text-decoration:none;
+	color: #000;
+	font-size: 20px;
+	line-height: 50px;
+}
+
+.About .AboutContainer .AboutLinks a :hover{
+	color:#E5BA22;
+	transition: 0.5s;
+}
+
+.About .AboutContainer .AboutHeading {
+	color:darkslategrey;
+	font-size: 28px;
+	margin-left: -5px;
+}
+
+.About .AboutContainer .SocialLinks{
+	margin: -20px -10px 10px 10px;
+}
+
+/*-- ---------------------------------------------------------------- Null Styling ---------------------------------------------------------------------------------- */
+
+.null{
+	height:60px;
+	background-color:#1F1F1F; 
+	border-top-left-radius: 30px;
+	border-top-right-radius:30px;
+}
+
+.null .null-text{
+	display: flex;
+	justify-content: flex-start;
+	color: #928C8D;
+	padding: 25px 0 0 120px;
+}
+
+
+
